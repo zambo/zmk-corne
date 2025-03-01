@@ -18,12 +18,12 @@
 };
 
 // This is from the original eyelash config, might not be needed
-&td0 {
-  compatible = "zmk,behavior-tap-dance";
-  display-name = "Shift/Caps Lock Tap Dance";
-  #binding-cells = <0>;
-  bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
-};
+// &td0 {
+//   compatible = "zmk,behavior-tap-dance";
+//   display-name = "Shift/Caps Lock Tap Dance";
+//   #binding-cells = <0>;
+//   bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
+// };
 
 &rgb_encoder: rgb_encoder {
     compatible = "zmk,behavior-sensor-rotate";

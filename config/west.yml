@@ -2,12 +2,10 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-
     - name: urob
-    url-base: https://github.com/urob
-
+      url-base: https://github.com/urob
     - name: caksoylar
-    url-base: https://github.com/caksoylar
+      url-base: https://github.com/caksoylar
 
     - name: new-corne
     url-base: https://github.com/a741725193

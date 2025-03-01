@@ -38,6 +38,12 @@
     tap-ms = <30>;
 };
 
+&mmv {
+    acceleration-exponent = <2>;      // 1
+    time-to-max-speed-ms = <40>;     // 40
+    delay-ms = <0>;                  // 0
+};
+
 // mods deactivate caps-word, requires PR https://github.com/zmkfirmware/zmk/pull/1451
 // &caps_word {
 //   /delete-property/ ignore-modifiers;

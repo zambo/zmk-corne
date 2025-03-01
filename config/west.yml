@@ -6,6 +6,8 @@ manifest:
       url-base: https://github.com/urob
     - name: caksoylar
       url-base: https://github.com/caksoylar
+    - name: dhruvinsh
+      url-base: https://github.com/dhruvinsh
     - name: eyelash_corne
       url-base: https://github.com/a741725193
       # Additional modules containing boards/shields/custom code can be listed here as well.
@@ -24,7 +26,7 @@ manifest:
       remote: urob
       revision: main
     - name: zmk-tri-state
-      remote: caksoylar
-      revision: split-locality
+      remote: dhruvinsh
+      revision: main
   self:
     path: config

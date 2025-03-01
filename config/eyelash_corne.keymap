@@ -8,8 +8,8 @@
 #include "./myrioku/custom-config.h"
 // Local Map File
 #include "./myrioku/corne-eyelash.h"
-// Get file from submodule
-#include "../miryoku/miryoku.dtsi"
+// Base Miryoku Config
+#include "./myrioku/base/miryoku.dtsi"
 
 / {
 chosen {zmk,matrix_transform = &default_transform;};

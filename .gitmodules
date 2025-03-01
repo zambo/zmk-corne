@@ -1,3 +1,6 @@
 [submodule "knucklehead"]
 	path = knucklehead
 	url = https://github.com/minusfive/zmk-config.git
+[submodule "miryoku_zmk"]
+	path = miryoku_zmk
+	url = https://github.com/manna-harbour/miryoku_zmk.git

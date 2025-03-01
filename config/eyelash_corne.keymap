@@ -1,11 +1,16 @@
 /*
- * Copyright (c) 2020 The ZMK Contributors
- *
- * SPDX-License-Identifier: MIT
- */
+* Copyright (c) 2020 The ZMK Contributors
+*
+* SPDX-License-Identifier: MIT
+*/
 
-#include "./knucklehead/base.dtsi"
+// Local Custom Config
+#include "./myrioku/custom-config.h"
+// Local Map File
+#include "./myrioku/corne-eyelash.h"
+// Get file from submodule
+#include "../miryoku/miryoku.dtsi"
 
 / {
-    chosen {zmk,matrix_transform = &default_transform;};
+chosen {zmk,matrix_transform = &default_transform;};
 };

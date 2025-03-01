@@ -6,8 +6,7 @@ manifest:
       url-base: https://github.com/urob
     - name: caksoylar
       url-base: https://github.com/caksoylar
-
-    - name: new-corne
+    - name: eyelash_corne
       url-base: https://github.com/a741725193
       # Additional modules containing boards/shields/custom code can be listed here as well.
       # See:
@@ -15,18 +14,15 @@ manifest:
       # - https://docs.zephyrproject.org/3.5.0/develop/west/manifest.html#projects
   projects:
     - name: eyelash_corne
-      url: new-corne
+      url: eyelash_corne
       revision: main
-
     - name: zmk
       remote: zmkfirmware
       revision: main
       import: app/west.yml
-
     - name: zmk-auto-layer
       remote: urob
       revision: main
-
     - name: zmk-tri-state
       remote: caksoylar
       revision: split-locality

@@ -8,7 +8,7 @@ manifest:
       url-base: https://github.com/caksoylar
 
     - name: new-corne
-    url-base: https://github.com/a741725193
+      url-base: https://github.com/a741725193
       # Additional modules containing boards/shields/custom code can be listed here as well.
       # See:
       # - https://zmk.dev/docs/features/modules

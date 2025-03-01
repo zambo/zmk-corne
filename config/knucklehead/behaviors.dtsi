@@ -19,20 +19,20 @@
 
 
 
-/omit-if-no-ref/ rgb_encoder: rgb_encoder {
-    compatible = "zmk,behavior-sensor-rotate";
-    #sensor-binding-cells = <0>;
-    bindings = <&rgb_ug RGB_BRI>, <&rgb_ug RGB_BRD>;
-};
+// /omit-if-no-ref/ rgb_encoder: rgb_encoder {
+//     compatible = "zmk,behavior-sensor-rotate";
+//     #sensor-binding-cells = <0>;
+//     bindings = <&rgb_ug RGB_BRI>, <&rgb_ug RGB_BRD>;
+// };
 
-/omit-if-no-ref/ scroll_encoder: scroll_encoder {
+&scroll_encoder: scroll_encoder {
     compatible = "zmk,behavior-sensor-rotate";
     #sensor-binding-cells = <0>;
     bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
     tap-ms = <30>;
 };
 
-/omit-if-no-ref/ mmv: mmv {
+&mmv: mmv {
     acceleration-exponent = <2>;      // 1
     time-to-max-speed-ms = <40>;     // 40
     delay-ms = <0>;                  // 0

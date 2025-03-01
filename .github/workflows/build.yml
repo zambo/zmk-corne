@@ -7,4 +7,9 @@ on:
 
 jobs:
   build:
-    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+    uses: ./.github/workflows/main.yml
+    secrets: inherit
+    with:
+      board: '["eyelash_corne_left", "eyelash_corne_right"]'
+      shield: '["nice_view"]'
+      alphas: '["default"]'

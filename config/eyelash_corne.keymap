@@ -9,7 +9,7 @@
 // Local Map File
 #include "./myrioku/corne-eyelash.h"
 // Base Miryoku Config
-#include "./myrioku/base/miryoku.dtsi"
+#include "./myrioku/base/miryoku.h"
 
 / {
 chosen {zmk,matrix_transform = &default_transform;};

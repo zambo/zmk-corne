@@ -22,7 +22,7 @@ manifest:
       remote: zmkfirmware
       revision: main
       import: app/west.yml
-    - name: zmk-eyelash_corne
+    - name: zmk-new_corne
       remote: eyelash_corne
       revision: main
       # ZMK Modules
@@ -40,5 +40,20 @@ manifest:
     - name: zmk-tri-state
       path: modules/zmk/tri-state
 
+    - name: zephyr
+      revision: v3.5.0+zmk-fixes
+      clone-depth: 1
+      import:
+        # Only enable most commonly used boards. For less common hardware one
+        # may need to enable additional modules.
+        name-allowlist:
+          - cmsis
+          - hal_nordic
+          - hal_rpi_pico
+          - hal_stm32
+          - lvgl
+          - tinycrypt
+          - nice_view_gem
+          - nice_view
   self:
     path: config

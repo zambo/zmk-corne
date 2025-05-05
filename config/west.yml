@@ -2,17 +2,39 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-      # Additional modules containing boards/shields/custom code can be listed here as well.
-      # See:
-      # - https://zmk.dev/docs/features/modules
-      # - https://docs.zephyrproject.org/3.5.0/develop/west/manifest.html#projects
-  projects:
+    # Additional modules containing boards/shields/custom code can be listed here as well
+    # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
     - name: eyelash_corne
-      url: https://github.com/a741725193/zmk-new_corne
-      revision: main
+      url-base: https://github.com/a741725193
+    # - name: nanda-irjayandi
+    #   url-base: https://github.com/nanda-irjayandi
+    - name: m165437
+      url-base: https://github.com/M165437
+    - name: urob
+      url-base: https://github.com/urob
+
+  projects:
     - name: zmk
       remote: zmkfirmware
       revision: main
       import: app/west.yml
+    - name: zmk-eyelash_corne
+      remote: eyelash_corne
+      revision: main
+      # ZMK Modules
+    - name: nice-view-gem
+      remote: m165437
+      revision: main
+    - name: zmk-adaptive-key
+      path: modules/zmk/adaptive-key
+    - name: zmk-auto-layer
+      path: modules/zmk/auto-layer
+    - name: zmk-helpers
+      path: modules/zmk/helpers
+    - name: zmk-leader-key
+      path: modules/zmk/leader-key
+    - name: zmk-tri-state
+      path: modules/zmk/tri-state
+
   self:
     path: config

@@ -25,6 +25,7 @@ manifest:
     - name: zmk-new_corne
       remote: eyelash_corne
       revision: main
+      import: config/west.yml
       # ZMK Modules
     - name: nice-view-gem
       remote: m165437
